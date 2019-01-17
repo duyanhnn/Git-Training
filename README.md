@@ -31,7 +31,8 @@ Pull from specific branch (ex: master):
 ```$xslt
 git pull origin master
 ```
-Or set up so that your local master branch tracks github master branch as an upstream (mapping between local branch & remote branch, commonly use after creating a new branch):
+Or set up so that your local master branch tracks github master branch as an upstream (mapping between local branch & remote branch),
+to set upstream, branch must existed in set of local branches:
 ```$xslt
 git branch --set-upstream-to=origin/<remote branch> <local branch>
 ```
@@ -39,10 +40,12 @@ For example
 ```$xslt
 git branch --set-upstream-to=origin/master master
 ```
-For existed remote branch, fetch first:
+For existed remote branch, fetch first (usually run after $(git checkout -b <branch>)):
 ```$xslt
 git fetch
 ```
+**It is recommended that you name your local branch the same as remote branch**
+
 Then you can use pull and push with default upstream config
 ```$xslt
 git pull

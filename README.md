@@ -31,7 +31,7 @@ Pull from specific branch (ex: master):
 ```$xslt
 git pull origin master
 ```
-Or set up so that your local master branch tracks github master branch as an upstream (mapping between local branch & remote branch):
+Or set up so that your local master branch tracks github master branch as an upstream (mapping between local branch & remote branch, commonly use after creating a new branch):
 ```$xslt
 git branch --set-upstream-to=origin/<remote branch> <local branch>
 ```

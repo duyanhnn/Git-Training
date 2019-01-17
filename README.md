@@ -14,7 +14,7 @@ Alternative email:
 ```$xslt
 git config --global user.email "15110007@student.hcmute.edu.vn"
 ```
-Clone with specific branch to a specific folder:
+Clone with specific branch (ex: master) to a specific folder (ex: git-tranining-master):
 ```$xslt
 git clone -b master https://github.com/duyanhnn/Git-Training.git git-tranining-master
 ```
@@ -26,4 +26,26 @@ git remote add origin https://github.com/duyanhnn/Git-Training.git
 To change origin URI:
 ```$xslt
 git remote set-url origin https://github.com/duyanhnn/Git-Training.git
+```
+Pull from specific branch (ex: master):
+```$xslt
+git pull origin master
+```
+Or set up so that your local master branch tracks github master branch as an upstream:
+```$xslt
+git branch --set-upstream-to=origin/<remote branch> <local branch>
+```
+For example
+```$xslt
+git branch --set-upstream-to=origin/master master
+git pull
+git push
+```
+For unrelated histories error:
+```$xslt
+git pull origin <branch> --allow-unrelated-histories
+```
+For example:
+```$xslt
+git pull --allow-unrelated-histories
 ```

@@ -71,4 +71,18 @@ Specific upstream information
 git branch -vv
 git remote show origin
 ```
-For ...
+For removing a branch:
+```$xslt
+git push --delete <remote> <branch>
+git branch -d <local branch>
+```
+For example:
+```$xslt
+git push --delete origin branch_test_2
+git branch -d branch_test_2
+```
+Or use -D flag to force remove (on local):
+```$xslt
+git push --delete origin branch_test_2
+git branch -D branch_test_2
+```

@@ -48,9 +48,8 @@ Then you can use pull and push with default upstream config
 git pull
 git push
 ```
-Or set upstream when pull/push (if you use push command, remote branch will automatically be created if not existed)
+Or set upstream when push (remote branch will automatically be created if not existed)
 ```$xslt
-git pull -u origin <remote branch>
 git push -u origin <remote branch>
 ```
 For unrelated histories error:

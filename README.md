@@ -38,8 +38,20 @@ git branch --set-upstream-to=origin/<remote branch> <local branch>
 For example
 ```$xslt
 git branch --set-upstream-to=origin/master master
+```
+For existed remote branch, fetch first:
+```$xslt
+git fetch
+```
+Then you can use pull and push with default upstream config
+```$xslt
 git pull
 git push
+```
+Or set upstream when pull/push (if you use push command, remote branch will automatically be created if not existed)
+```$xslt
+git pull -u origin <remote branch>
+git push -u origin <remote branch>
 ```
 For unrelated histories error:
 ```$xslt

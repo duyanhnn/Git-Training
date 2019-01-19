@@ -86,4 +86,4 @@ For removing a branch (-D flag is for force remove):
 git push --delete <remote> <branch>
 git branch -d/-D <local branch>
 ```
-This is for branch_2
+For

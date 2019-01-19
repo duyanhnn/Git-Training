@@ -66,11 +66,11 @@ git pull --allow-unrelated-histories
 For information about tracking and upstream, use one or more of the following commands:
 ```$xslt
 git status
-git branch --all
+git branch -vv -a
 ```
 Specific upstream information
 ```$xslt
-git branch -vv
+git branch -vv -a
 git remote show origin
 ```
 For renaming a branch:

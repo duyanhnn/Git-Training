@@ -43,6 +43,11 @@ Set up so that your local master branch tracks github master branch as an upstre
 to set upstream, branch must existed in set of local branches:
 ```$xslt
 git branch --set-upstream-to=origin/<remote branch> <local branch>
+git branch -u origin/<remote branch> <local branch>
+```
+To unset upstream, use:
+```$xslt
+git branch --unset-upstream <local branch>
 ```
 **It is recommended that you name your local branch the same as remote branch**
 
@@ -76,14 +81,17 @@ git remote show origin
 For renaming a branch:
 ```$xslt
 git branch -m <old> <new>
+git branch -M <old> <new>
 ```
 For renaming current branch:
 ```$xslt
 git branch -m <new>
+git branch -M <new>
 ```
 For removing a branch (-D flag is for force remove):
 ```$xslt
 git push --delete <remote> <branch>
-git branch -d/-D <local branch>
+git branch -d <local branch>
+git branch -D <local branch>
 ```
 For 

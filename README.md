@@ -31,18 +31,18 @@ Pull from specific branch (ex: master):
 ```$xslt
 git pull origin master
 ```
-Or set up so that your local master branch tracks github master branch as an upstream (mapping between local branch & remote branch),
+For existed remote branch, fetch first (usually run after $(git checkout -b <branch>)), fetch will fetch all existed current branches:
+```$xslt
+git fetch
+```
+Or for only 1 specific branch
+```$xslt
+git fetch origin <branch>
+```
+Set up so that your local master branch tracks github master branch as an upstream (mapping between local branch & remote branch),
 to set upstream, branch must existed in set of local branches:
 ```$xslt
 git branch --set-upstream-to=origin/<remote branch> <local branch>
-```
-For example
-```$xslt
-git branch --set-upstream-to=origin/master master
-```
-For existed remote branch, fetch first (usually run after $(git checkout -b <branch>)):
-```$xslt
-git fetch
 ```
 **It is recommended that you name your local branch the same as remote branch**
 
@@ -86,4 +86,4 @@ For removing a branch (-D flag is for force remove):
 git push --delete <remote> <branch>
 git branch -d/-D <local branch>
 ```
-For
+For 

@@ -2,4 +2,4 @@
 	email = duyanhnguyenngoc97@gmail.com
 	name = Anh Nguyễn
 [core]
-	editor = subl -n -w
+	editor = subl -n -

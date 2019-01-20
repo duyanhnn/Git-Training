@@ -24,6 +24,8 @@ Or edit ~/.gitconfig:
 	name = Anh Nguyễn
 [core]
 	editor = subl -w
+[credential]
+	helper = store
 ```
 **Remember! Email + password with github.com domain is NOT used for log in, it can only be used to generate access token for pulling, fetching, pushing, etc... API using commands**
 

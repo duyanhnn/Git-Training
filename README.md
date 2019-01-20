@@ -105,4 +105,4 @@ git push --delete <remote> <branch>
 git branch -d <local branch>
 git branch -D <local branch>
 ```
-For 
+For test text editor

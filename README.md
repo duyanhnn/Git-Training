@@ -20,7 +20,8 @@ git clone -b master https://github.com/duyanhnn/Git-Training.git git-tranining-m
 ```
 Initialize:
 ```$xslt
-git init
+git init (for current directory)
+git init <directory> (for any directory)
 git remote add origin https://github.com/duyanhnn/Git-Training.git
 ```
 To change origin URI:

@@ -8,12 +8,12 @@ To add global configuration:
 
 ```$xslt
 git config --global user.name "Anh Nguyễn"
-git config --global user.email "duyanhnn@github.com"
-git config --global core.editor "subl -n -w"
+git config --global user.email "duyanhnguyenngoc97@gmail.com"
+git config --global core.editor "subl -w"
 ```
 Alternative email:
 ```$xslt
-git config --global user.email "duyanh-studentaccount-k15@github.com"
+git config --global user.email "15110007@student.hcmute.edu.vn"
 ```
 Or edit ~/.gitconfig:
 ```$xslt
@@ -21,7 +21,7 @@ Or edit ~/.gitconfig:
 	email = duyanhnn@github.com
 	name = Anh Nguyễn
 [core]
-	editor = subl -n -w
+	editor = subl -w
 ```
 **Remember! Email + password with github.com domain is NOT used for log in, it can only be used to generate access token for pulling, fetching, pushing, etc... API using commands**
 

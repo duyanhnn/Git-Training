@@ -27,7 +27,9 @@ Or edit ~/.gitconfig:
 [credential]
 	helper = store
 ```
-**Remember! Email + password with github.com domain is NOT used for log in, it can only be used to generate access token for pulling, fetching, pushing, etc... API using commands**
+**Remember! Email + password with github.com domain is NOT used for log in, it can only be used to generate access token for pulling, fetching, pushing, etc... API using commands.**
+
+**Only store git credentials in plain text in your personal computer. For storing your credentials in SSH key, see instruction below.**
 
 Clone with specific branch (ex: master) to a specific folder (ex: git-tranining-master):
 ```$xslt
@@ -65,7 +67,7 @@ To unset upstream, use:
 ```$xslt
 git branch --unset-upstream <local branch>
 ```
-**It is recommended that you name your local branch the same as remote branch**
+**It is recommended that you name your local branch the same as remote branch.**
 
 Then you can use pull and push with default upstream config
 ```$xslt

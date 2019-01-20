@@ -7,13 +7,24 @@ Created and edited by Onlyuuuuuuuuuuuuuuuuuuuuuuuuu!
 To add global configuration:
 
 ```$xslt
-git config --global user.name "Duy Anh"
-git config --global user.email "duyanhnguyenngoc97@gmail.com"
+git config --global user.name "Anh Nguyễn"
+git config --global user.email "duyanhnn@github.com"
+git config --global core.editor "subl -n -w"
 ```
 Alternative email:
 ```$xslt
-git config --global user.email "15110007@student.hcmute.edu.vn"
+git config --global user.email "duyanh-studentaccount-k15@github.com"
 ```
+Or edit ~/.gitconfig:
+```$xslt
+[user]
+	email = duyanhnn@github.com
+	name = Anh Nguyễn
+[core]
+	editor = subl -n -w
+```
+**Remember! Email + password with github.com domain is NOT used for log in, it can only be used to generate access token for pulling, fetching, pushing, etc... API using commands**
+
 Clone with specific branch (ex: master) to a specific folder (ex: git-tranining-master):
 ```$xslt
 git clone -b master https://github.com/duyanhnn/Git-Training.git git-tranining-master

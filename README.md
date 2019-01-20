@@ -28,17 +28,17 @@ To change origin URI:
 ```$xslt
 git remote set-url origin https://github.com/duyanhnn/Git-Training.git
 ```
-Pull from specific branch (ex: master):
-```$xslt
-git pull origin master
-```
-For existed remote branch, fetch first (usually run after $(git checkout -b <branch>)), fetch will fetch all existed current branches:
+For existed remote branch, fetch first (usually run after $(git checkout -b <branch>) and $(git remote add origin <URI>)), fetch will fetch all existed current branches:
 ```$xslt
 git fetch
 ```
 Or for only 1 specific branch
 ```$xslt
 git fetch origin <branch>
+```
+Pull from specific branch (ex: master):
+```$xslt
+git pull origin master
 ```
 Set up so that your local master branch tracks github master branch as an upstream (mapping between local branch & remote branch),
 to set upstream, branch must existed in set of local branches:
@@ -63,11 +63,8 @@ git push -u origin <remote branch>
 ```
 For unrelated histories error:
 ```$xslt
-git pull origin <branch> --allow-unrelated-histories
-```
-For example:
-```$xslt
 git pull --allow-unrelated-histories
+git pull origin <branch> --allow-unrelated-histories
 ```
 For information about tracking and upstream, use one or more of the following commands:
 ```$xslt
@@ -79,12 +76,14 @@ Specific upstream information
 git branch -vv -a
 git remote show origin
 ```
-For renaming a branch:
+**Remember! Big capital letter (in command's flag) means with FORCE! Use with caution!**
+
+For renaming a branch (-M flag is for force rename):
 ```$xslt
 git branch -m <old> <new>
 git branch -M <old> <new>
 ```
-For renaming current branch:
+For renaming current branch (-M flag is for force rename):
 ```$xslt
 git branch -m <new>
 git branch -M <new>

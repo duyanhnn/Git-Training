@@ -94,6 +94,12 @@ Specific upstream information
 git branch -vv -a
 git remote show origin
 ```
+To combine $(git add .) and git commit use (only tracked files, untracked files must be added manually):
+```$xslt
+git commit -a
+git commit -am "<messages>"
+```
+
 **Remember! Big capital letter (in command's flag) means with FORCE! Use with caution!**
 
 For renaming a branch (-M flag is for force rename):

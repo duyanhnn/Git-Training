@@ -103,7 +103,7 @@ To abort file changed (not yet added in staging area), use:
 ```$xslt
 git checkout -- <file name>
 ```
-To abort file changed (added in staging area and send back to unstaging area, but still keep changes of course), use:
+To abort file added in staging area (after $(git add .)) and send back to unstaging area, but still keep changes of course, use:
 ```$xslt
 git reset HEAD <file name>
 ```

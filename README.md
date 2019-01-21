@@ -86,6 +86,7 @@ git pull origin <branch> --allow-unrelated-histories
 For information about tracking and upstream, use one or more of the following commands:
 ```$xslt
 git status
+git ls-files
 git branch -vv -a
 ```
 Specific upstream information

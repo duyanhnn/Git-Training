@@ -96,11 +96,11 @@ git remote show origin
 ```
 To update any changes outside of git (using bash command or file manager to rename, change levels, ...):
 ```$xslt
-git add -A .
+git add -A
 ```
 To update tracked files (rename, change levels, ...):
 ```$xslt
-git add -u .
+git add -u
 ```
 To delete a file tracked by git (without delete in local directory, remove the "cached" flag):
 ```$xslt

@@ -99,6 +99,14 @@ To combine $(git add .) and git commit use (only tracked files, untracked files 
 git commit -a
 git commit -am "<messages>"
 ```
+To abort file changed (not yet added in staging area), use:
+```$xslt
+git checkout -- <file name>
+```
+To abort file changed (added in staging area and send back to unstaging area, but still keep changes of course), use:
+```$xslt
+git reset HEAD <file name>
+```
 
 **Remember! Big capital letter (in command's flag) means with FORCE! Use with caution!**
 

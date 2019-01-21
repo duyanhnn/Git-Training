@@ -102,10 +102,10 @@ To update tracked files (rename, change levels, ...):
 ```$xslt
 git add -u
 ```
-To delete a file tracked by git (without delete in local directory, remove the "cached" flag):
+To delete a file tracked by git (without delete in local directory, remove the "cached" flag), remember to use FORCE flag (-f) with caution:
 ```$xslt
-git rm --cached <file name>
-git rm -r --cached <directory name>
+git rm -f --cached <file name>
+git rm -rf --cached <directory name>
 ```
 
 To combine $(git add .) and git commit use (only tracked files, untracked files must be added manually):

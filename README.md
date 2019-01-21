@@ -94,6 +94,15 @@ Specific upstream information
 git branch -vv -a
 git remote show origin
 ```
+To update any changes outside of git (using bash command or file manager to rename, change levels, ...):
+```$xslt
+git add -A .
+```
+To update tracked files (rename, change levels, ...):
+```$xslt
+git add -u .
+```
+
 To combine $(git add .) and git commit use (only tracked files, untracked files must be added manually):
 ```$xslt
 git commit -a

@@ -149,4 +149,14 @@ git push --delete <remote> <branch>
 git branch -d <local branch>
 git branch -D <local branch>
 ```
-For ...
+**This section is only preserved for GIT ALIASES**
+
+Create an alias
+```$xslt
+git config --global alias.<name> "<command without git prefix>"
+```
+Or add directly to .gitconfig
+```$xslt
+[alias]
+	logfull = "log --oneline --graph --decorate"
+```

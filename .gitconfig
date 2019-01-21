@@ -3,3 +3,7 @@
 	name = Anh Nguyễn
 [core]
 	editor = subl -w
+[credential]
+	helper = store
+[alias]
+	logfull = "log --oneline --graph --decorate"

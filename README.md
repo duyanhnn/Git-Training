@@ -121,6 +121,15 @@ To abort file added in staging area (after $(git add .)) and send back to unstag
 ```$xslt
 git reset HEAD <file name>
 ```
+To see commit history (press q to quit):
+```$xslt
+git log
+git log --abbrev-commit
+git log --oneline --graph --decorate
+git log --since="3 days ago"
+git log -- <path to file | file name>
+git show <commit id>
+```
 
 **Remember! Big capital letter (in command's flag) means with FORCE! Use with caution!**
 

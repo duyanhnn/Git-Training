@@ -4,6 +4,7 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 # Git Commands Cheatsheet
 Created and edited by Onlyuuuuuuuuuuuuuuuuuuuuuuuuu!
 
+## Part I: Git Configurations
 To add global configuration:
 
 ```$xslt
@@ -31,8 +32,10 @@ Or edit ~/.gitconfig:
 
 **Only store git credentials in plain text in your personal computer. For storing your credentials in SSH key, see instruction below.**
 
+## Part II: Git Initialization
 Clone with specific branch (ex: master) to a specific folder (ex: git-tranining-master):
 ```$xslt
+git clone -b <branch> https://github.com/duyanhnn/Git-Training.git <folder>
 git clone -b master https://github.com/duyanhnn/Git-Training.git git-tranining-master
 ```
 Initialize:
@@ -83,6 +86,8 @@ For unrelated histories error:
 git pull --allow-unrelated-histories
 git pull origin <branch> --allow-unrelated-histories
 ```
+
+## Part III: Git Informations
 For information about tracking and upstream, use one or more of the following commands:
 ```$xslt
 git status
@@ -94,6 +99,8 @@ Specific upstream information
 git branch -vv -a
 git remote show origin
 ```
+
+## Part IV: Git Managing Files
 To update any changes outside of git (using bash command or file manager to rename, change levels, ...):
 ```$xslt
 git add -A
@@ -131,6 +138,7 @@ git log -- <path to file | file name>
 git show <commit id>
 ```
 
+## Part V: Git Branches
 **Remember! Big capital letter (in command's flag) means with FORCE! Use with caution!**
 
 For renaming a branch (-M flag is for force rename):
@@ -149,6 +157,8 @@ git push --delete <remote> <branch>
 git branch -d <local branch>
 git branch -D <local branch>
 ```
+
+## Part VI: Git Aliases
 **This section is only preserved for GIT ALIASES**
 
 Create an alias
